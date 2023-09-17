@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default function Home() {
-  const [locState, setLocState] = useState(null);
+  const [locState, setLocState] = useState<any>();
   const [watchID, setWatchID] = useState(null);
 
   const defaultProps = {
