@@ -23,7 +23,7 @@ export default function Home() {
         // const { coordinate, routeCoordinates, distanceTravelled } = locState;//old coordinates
         const { latitude, longitude } = position.coords;
 
-        console.log({ latitude, longitude });
+        setLocState({ latitude, longitude });
 
         const newCoordinate = {
           latitude,
@@ -46,6 +46,8 @@ export default function Home() {
 
   return (
     <div style={{ height: "100vh", width: "100%" }}>
+      <p>{locState?.latitude}</p>
+      <p>{locState?.longitude}</p>
       {/*<GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
