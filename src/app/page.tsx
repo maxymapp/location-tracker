@@ -23,6 +23,7 @@ export default function Home() {
         // const { coordinate, routeCoordinates, distanceTravelled } = locState;//old coordinates
         const { latitude, longitude } = position.coords;
 
+        // @ts-ignore
         setLocState({ latitude, longitude });
 
         const newCoordinate = {
