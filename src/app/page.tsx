@@ -41,7 +41,7 @@ export default function Home() {
       (error) => console.log(error),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
     );
-    setWatchID(id);
+    // setWatchID(id);
   }, []);
 
   return (
